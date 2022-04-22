@@ -10,9 +10,7 @@
  *  MIT License
  */
 
-(function() {
-
-  'use strict';
+export default function(HowlerGlobal, Howler, Howl, Sound) {
 
   // Setup default properties.
   HowlerGlobal.prototype._pos = [0, 0, 0];
@@ -656,4 +654,4 @@
       sound._parent.pause(sound._id, true).play(sound._id, true);
     }
   };
-})();
+};
